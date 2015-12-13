@@ -93,6 +93,15 @@ public class QuteMain //starts the class
 		    w = new Weights(i, weight);
 		    weightlist.add(w);
 		}
+		System.out.println("Enter the number of cross qubits."); //asks for cross qubit input
+		int noxqubit = scan.nextInt(); //declares and inputs number 
+		for(int i = 0; i < noxqubit; i++) //starts for loop: i < number of cross qubits
+		{
+			System.out.println("What is the number of the first qubit?");
+			int xq1 = scan.nextInt();
+			System.out.println("What is the number of the second qubit?");
+			int xq2 = scan.nextInt();
+		}
 	}
 	
 	public static long GetCurrentWeightTotal()
