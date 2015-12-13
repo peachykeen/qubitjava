@@ -103,6 +103,9 @@ public class QuteMain //starts the class
 			int xq2 = scan.nextInt();
 			System.out.println("What is the weight of the cross qubit?");
 			int crossweight = scan.nextInt();
+			Weights w;
+		    w = new Weights(i, weight);
+		    weightlist.add(w);
 		}
 	}
 	
