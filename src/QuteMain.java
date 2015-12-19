@@ -84,27 +84,27 @@ public class QuteMain //starts the class
 	
 	public static void GetWeights() //starts the GetWeights method
 	{
-		weightlist = new ArrayList<Weights>();
+		weightlist = new ArrayList<Weights>(); //initializes the weightlist array
 		for(int i = 0; i < Integer.parseInt(numberofqubits); i++) //starts for loop: i < number of qubits
 		{
-			System.out.println("What is the weight of the qubit " + i + "?" );
+			System.out.println("What is the weight of the qubit " + i + "?" ); //asks for weight of qubit
 			weight = scan.nextInt();
 			Weights w;
 		    w = new Weights(i, weight);
 		    weightlist.add(w);
 		}
-		System.out.println("Enter the number of cross qubits."); //asks for cross qubit input
+		System.out.println("Enter the number of couplers."); //asks for the strength input
 		int noxqubit = scan.nextInt(); //declares and inputs number 
-		for(int i = 0; i < noxqubit; i++) //starts for loop: i < number of cross qubits
+		for(int i = 0; i < noxqubit; i++) //starts for loop: i < number of strength
 		{
 			System.out.println("What is the number of the first qubit?");
 			int xq1 = scan.nextInt();
 			System.out.println("What is the number of the second qubit?");
 			int xq2 = scan.nextInt();
-			System.out.println("What is the weight of the cross qubit?");
-			int crossweight = scan.nextInt();
+			System.out.println("What is the strength of the coupler?");
+			int coupler = scan.nextInt();
 			Weights w;
-		    w = new Weights(xq1, xq2, crossweight);
+		    w = new Weights(xq1, xq2, coupler);
 		    weightlist.add(w);
 		}
 	}
